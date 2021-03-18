@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flawer store</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <h1 class="visually-hidden">flawer store </h1> <!--заголовка на сайте нет,поэтому мы сделаем скрытый заголовок для поисковиков-->
+   <header class="header">  <!--разметка по БЭМ-->
+    <div class="content header__content header-content">
+    <div class="header-content__logo"> <!--оборачиваем лого в див,чтобы задать ему такие невидимые размеры как у кнопки
+    чтобы nav легко можно было выровнять между ними-->
+       <img  src="./img/logo.svg" alt="логотип приложения">
+    </div>
+       <nav class="header-content__nav">
+           <ul class="nav">
+               <li class="nav__item"><a href="/" class="nav__link">Главная</a></li>
+               <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+               <li class="nav__item"><a href="#" class="nav__link">Наши сервисы</a></li>
+               <li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+           </ul>
+       </nav>
+       <button  id="myBtn" class="header-content__btn" type="button">ПОИСК ПОДАРКОВ</button> 
+       <!--кнопка с модальным окном-->
+       
+
+       <!-- The Modal -->
+       <div id="myModal" class="modal">
+       
+         <!-- Modal content -->
+         <div class="modal-content">
+           <div class="modal-header">
+               <div class="modal_wrapper">
+             
+             <h2>Поиск подарков в нашем приложении</h2>
+             <span class="close">&times;</span>
+           </div></div>
+           <div class="modal-body">
+             <p>Скачайте приложение на ваш телефон</p>
+             <div class="modal_link">
+                 <a href="#"><img src="./img/image 1.jpg"></a>
+                 <a href="#"><img src="./img/image 4.jpg"></a>
+                </div>
+             <p>Если вы сейчас сидите с компьютера, просто напишите свой номер телфона
+                  и мы пришлем вам<span> ссылку SMS сообщением</span></p>
+                  <form method="GET">  
+                  <div class="input_wraper">
+              <label for="tel">Номер вашего телефона</label> <br>
+              <input type="tel" name="tel" required  placeholder="Введите ваш номер мобильного телефона" >
+                 </div>
+             
+           </div>
+           <div class="modal-footer">
+               <div class="modal_wrapper">
+             <button type="submit">Отправить ссылку</button>
+             <button type="reset">Отмена</button>
+           </div></div>
+        </form>
+         </div>
+       
+       </div>
+       <!-- end modal*/-->
+    </div>
+   </header>
+   <main>
+      <section class="find-gift"> 
+          <div class="content">
+              <div class="find-gift__content">
+                    <h2>Найти подарок</h2><!--скрытый заголовок текста-->
+                    <p class="find-gift__title">Найдите<br> подарок жене<br> или девушке</p>
+                    <p class="find-gift__text">Пытаетесь найти подарок жене или девушке?<br>
+                        Нет проблем!</p>
+        <button class="find-gift__button">НАЙТИ СЕЙЧАС</button> 
+          </div>   
+                </div>
+
+    </section>   
+    <section class="work">
+      
+          <div class="work__content">
+        <h2>Как мы работаем</h2>
+        <p>Мы&nbsp;уже опросили сотни женщин, чего они хотят, и&nbsp;создали базу данных с&nbsp;результатами. Все, что вам нужно сделать,
+             это принять участие в&nbsp;нашем коротком опросе, который займет всего несколько секунд, и&nbsp;наш собственный алгоритм подберет для вас несколько идеальных вариантов подарков.
+
+        </p>
+        <a href="#" class="work__button">Узнать больше</a> <!--Если ссылкка ведет на другую страницу-->
+    </div> 
+    </section>
+    <section class="cards"> <!--будем называть секцию по БЭМ-->
+        <div class="content">
+        <h2>Подарки на все случаи жизни</h2> <!--верстаем на грид эту секцию-->
+        <p>«Попробуйте наше веб-приложение, чтобы найти лучшие подарки на все случаи жизни»</p>
+        <ul class="card-list">
+            <li class="card-list__item card card--highlighted"><img class="card__image"  src="./img/Rectangle.jpg" alt="воздущный шарик и торт со свечками"> <!--дополнительный класс (модификатор)назначается.если эту одну карточку хотят сделать например с подсветкой-->
+                <h3 class="card__title">День Рождения</h3>
+                <a  href="#" class="card__link">Подробнее </a>
+            </li>
+            <li class="card-list__item card"><img src="./img/Rectangle (1).jpg" alt="">
+                <h3>Юбилей</h3>
+                <a href="#">Подробнее </a>
+            </li>
+            <li class="card-list__item card"><img src="./img/Rectangle (2).jpg" alt="">
+                 <h3>День Св. Валентна</h3>
+                 <a href="#">Подробнее </a>
+            </li>
+            <li class="card-list__item card"><img src="./img/Rectangle (3).jpg" alt="">
+                <h3>Рождество</h3>
+                <a href="#">Подробнее </a>
+            </li>
+        </ul></div>
+    </section>
+    <section class="registration">
+        <div class="content_width">
+        <div class="registration_content">
+        <h2 class="visually-hidden">Регистрация</h2><!--скрытый заголовок-->
+        
+        <p class="text">Готовы начать?</p>
+        <p>Зарегистрируйтесь или свяжитесь с нами</p>
+    </div>
+    <div class="registration_buttons">
+        <button>Найти сейчас</button><!--открывает модальное окно-->
+        <a href="#">Как это работает</a> <!--ссылка на страницу-->
+    </div></div>
+    </section>
+    <section class="best">
+        <h2>Лучшее из нашего блога</h2>
+        <p>«Заходи на наш блог, чтобы найти лучшие советы и рекомендации по выбору подарка»</p>
+        <div class="content">
+        
+                <article class ="img"><!--если это статья,то картинка является частью контента-->
+                   <img src="./img/Media.jpg" alt="">
+                   <div class="content_article">
+                   <p>Mr. John Doe</p>
+                   <h3>Лучший способ поздравить жену</h3>
+                   <a href="#">Читать больше</a>
+                   </div>
+                </article>
+            <ul>
+            <li>
+                <article>
+                    <h3>База данных для поиска подарков для девушки</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                    <a href="#">Читать больше</a>
+            </article>
+        </li>
+            <li>
+                <article>
+                    <h3>Как ИИ читает ваши мысли, чтобы найти лучший подарок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                    <a href="#">Читать больше</a>
+                </article>
+            </li>
+        </ul>
+        </div>
+    </section>
+   </main>
+   <footer class="footer">
+   <div class="footer_content">
+   
+    <div class="footer-navigation">
+        <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+    </ul>
+        <div class="footer_icon"><img src="./img/logo.png" alt="логотип"></div>
+     <ul>  
+        <li><a href="#">Наши сервисы</a></li>
+        <li><a href="#">Блог</a></li>
+    </ul>    
+    </div>
+    <hr>
+    <ul class="footer_soc">
+        <li>
+            <a href="#"><img src="./img/socseti/facebook.svg" alt="">   </a>
+        </li>
+        <li>
+            <a href="#"><img src="./img/socseti/tweeter.svg" alt="">   </a>
+        </li>
+        <li>
+            <a href="#"><img src="./img/socseti/inst.svg" alt="">   </a>
+        </li>
+        <li>
+            <a href="#"><img src="./img/socseti/youtub.svg" alt="">   </a>
+        </li>
+        <li>
+            <a href="#"><img src="./img/socseti/facebook.svg" alt="">   </a>
+        </li>
+    </ul>
+    <div class="footer_wrapper">
+    <p>© 2010 — 2020</p>
+    <a href="#" class="link">Privacy — Terms</a>
+</div>
+</div>
+   </footer>
+      <!--скрипт для модального окна-->
+   <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html>
